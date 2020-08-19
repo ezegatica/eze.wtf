@@ -1,0 +1,42 @@
+@font-face {
+    font-family: clock;
+    src: url(../fonts/clock.woff);
+}
+* {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+body {
+    font-family: clock;
+    background: black;
+    color: #00FF00;
+    margin: 0px;
+    padding: 0px;
+}
+.landing {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+}
+.landing #text{
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    letter-spacing: .15em; 
+}
+#text::after {
+    content: "|";
+    animation: .5s flickOfDaWrist ease infinite;
+}
+@keyframes flickOfDaWrist {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

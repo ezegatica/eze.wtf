@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></Eze></title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="tW()">
+    <div class="landing">
+        <h1 id="text"></h1>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+            var na = 0;
+            var txt = "EZEQUIEL GATICA";  
+            var speed = 150;
+            function tW() {
+                if(na < txt.length) {
+                    var txtPrint = txt.toUpperCase();
+                    document.getElementById("text").innerHTML += txtPrint.charAt(na);
+                    na++;
+                    setTimeout(tW, speed);
+                }
+            }
+            setTimeout(() => {
+                    console.log("Pasaron 4 segundos")
+
+                }, 4000);
+    </script>
+</body>
+</html>
