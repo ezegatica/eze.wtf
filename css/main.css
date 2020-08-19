@@ -30,9 +30,9 @@ body {
 }
 #text::after {
     content: "|";
-    animation: .5s flickOfDaWrist ease infinite;
+    animation: .5s pimpum ease infinite;
 }
-@keyframes flickOfDaWrist {
+@keyframes pimpum {
     0% {
         opacity: 0;
     }
@@ -40,3 +40,15 @@ body {
         opacity: 1;
     }
 }
+a{
+    color: #00FF00;
+    font-family: monospace;
+}
+a:hover{
+    color: white!important;
+}
+
+.rrss{
+    animation: 2s pimpum
+}
+

@@ -4,17 +4,23 @@
     <title></Eze></title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="https://youtube.com/favicon.ico" type="image/x-icon">
 </head>
-<body onload="tW()">
+<body onload="tW(); $('#redes').hide();">
     <div class="landing">
         <h1 id="text"></h1>
-
+        <br/>
+        <div id="redes">
+            <a href="https://gati.ga" class="rrss">Mi pagina</a>         
+        </div>
+        <div id="espacio">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: transparent">:P</a>         
+        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
+    
     <script>
             var na = 0;
-            var txt = "EZEQUIEL GATICA";  
+            var txt = "EZEQUIEL_GATICA";  
             var speed = 150;
             function tW() {
                 if(na < txt.length) {
@@ -26,8 +32,12 @@
             }
             setTimeout(() => {
                     console.log("Pasaron 4 segundos")
-
-                }, 4000);
+                    $('#redes').show();
+                    $('#espacio').hide();
+                }, 2500);
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
 </body>
 </html>
