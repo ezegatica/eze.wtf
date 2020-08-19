@@ -1,2 +1,2 @@
-# typewriter-landing-page
-100% Responsive typewrite landing page
+# eze.wtf
+Sitio para crear URLs cortas con mi dominio
