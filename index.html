@@ -2,18 +2,35 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="shortcut icon" href="./image/favicon2.ico" type="image/x-icon">
     <title>
         </Eze>
     </title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="https://youtube.com/favicon.ico" type="image/x-icon">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <meta name="description" content="Sitio web de Ezequiel Gatica">
 </head>
 
-<body onload="tW(); $('#redes').hide();">
+<body onload="tW(); $('#redes').hide(); $('#navbar').hide();">
+    <!-- <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="nav-links" >
+            <a href="https://apps.eze.wtf" target="_blank" id="navbar">Apps</a>
+            <a href="" target="_blank" > </a>
+        </div>
+    </div> -->
+    
     <div class="landing">
         <h1 id="text"></h1>
         <br />
@@ -22,36 +39,14 @@
             <a target="_blank" href="https://instagram.com/ezegaticaa"><i class="fa fa-instagram rrss"></i></a>
             <a target="_blank" href="https://github.com/ezegatica"><i class="fa fa-github rrss"></i></a>
             <a target="_blank" href="https://linkedin.com/in/ezeg"><i class="fa fa-linkedin-square rrss"></i></a>
-
-
         </div>
         <div id="espacio">
             <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: transparent">:P</a>
         </div>
-
     </div>
-
-    <script>
-        var na = 0;
-        var txt = "EZEQUIEL_GATICA";
-        var speed = 150;
-        function tW() {
-            if (na < txt.length) {
-                var txtPrint = txt.toUpperCase();
-                document.getElementById("text").innerHTML += txtPrint.charAt(na);
-                na++;
-                setTimeout(tW, speed);
-            }
-        }
-        setTimeout(() => {
-            console.log("Pasaron 4 segundos")
-            $('#redes').show();
-            $('#espacio').hide();
-        }, 2500);
-    </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

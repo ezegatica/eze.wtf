@@ -2,10 +2,20 @@
     font-family: clock;
     src: url(../fonts/clock.woff);
 }
+
 * {
+    overflow-y: hidden;
     -webkit-font-smoothing: antialiased;
-    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 }
+*::selection{
+    color: white;
+}
+
+:root {
+    --padd: 10px;
+}
+
 body {
     font-family: clock;
     background: black;
@@ -13,6 +23,7 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
 .landing {
     display: inline-flex;
     flex-direction: column;
@@ -22,16 +33,19 @@ body {
     min-height: 100vh;
     text-align: center;
 }
-.landing #text{
+
+.landing #text {
     max-width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    letter-spacing: .15em; 
+    letter-spacing: .15em;
 }
+
 #text::after {
     content: "|";
     animation: .5s pimpum ease infinite;
 }
+
 @keyframes pimpum {
     0% {
         opacity: 0;
@@ -40,15 +54,22 @@ body {
         opacity: 1;
     }
 }
-a{
+
+a {
     color: #00FF00;
     font-family: monospace;
 }
-a:hover{
+
+a:hover {
     color: white!important;
 }
 
-.rrss{
-    animation: 2s pimpum
+.rrss {
+    animation: 2s pimpum;
+    font-size: 24px;
+    padding-left: var(--padd);
+    padding-right: var(--padd);
 }
-
+#navbar{
+    animation: 2s pimpum;
+}
