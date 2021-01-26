@@ -6,7 +6,7 @@ var espacio = document.getElementById("espacio");
 var navbar = document.getElementById("navbar");
 
 function tW() {
-    redes.style.display = 'none';
+    // redes.style.display = 'none';
     // navbar.style.display = 'none';
 
     if (na < txt.length) {
