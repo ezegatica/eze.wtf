@@ -1,6 +1,7 @@
 @font-face {
     font-family: clock;
     src: url(../fonts/clock.woff);
+    font-display: swap;
 }
 
 * {
