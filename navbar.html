@@ -3,18 +3,35 @@
 <head>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/font-awesome-essential.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="preload" href="/fonts/FontAwesome.woff2" as="font" type="font/woff2" crossorigin/>
     <link rel="preload" href="/fonts/clock.woff" as="font" type="font/woff2" crossorigin/>
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#00ff00"/>
+
     <title>
         </Eze>
     </title>
     <meta name="description" content="Sitio web de Ezequiel Gatica">
 </head>
 
-<body onload="tW();">   
+<body onload="tW();">
+    <div class="nav" id="navbar" style="display: none;">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="nav-links" >
+            <a href="https://apps.eze.wtf" target="_blank" id="navbar">Apps</a>
+            <a href="" target="_blank" > </a>
+        </div>
+    </div>
+    
     <div class="landing">
         <h1 id="text"></h1>
         <br />
@@ -28,7 +45,7 @@
             <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: transparent">:P</a>
         </div>
     </div>
-    <script src="./js/index.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

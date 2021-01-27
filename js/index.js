@@ -21,6 +21,6 @@ function tW() {
 }
 function showRedes() {
     redes.style.display = 'block';
-    // navbar.style.display = 'block';
+    navbar.style.display = 'block';
     espacio.style.display = 'none';
 }
